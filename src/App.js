@@ -1,7 +1,12 @@
 import React from 'react'
+import './App.css'
 
-function App() {
-	return <div className='App'></div>
+import Home from './screens/Home'
+
+export default function App() {
+	return (
+		<div className='App'>
+			<Home />
+		</div>
+	)
 }
-
-export default App
