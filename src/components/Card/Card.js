@@ -8,9 +8,10 @@ export default function Card({ cardData }) {
 				? cardInfo.map(
 						({ id, name, language, created_at, owner: { html_url } }) => {
 							let date = new Date(created_at).toLocaleDateString()
+							let repoName = name.replace(/-/g, ' ').toUpperCase()
 							return (
 								<div className='card-unit' key={id}>
-									<h4 className='repo-name'>{name.toUpperCase()}</h4>
+									<h4 className='repo-name'>{repoName}</h4>
 									<a className='link-url' href={html_url}>
 										Go to this repository
 									</a>
