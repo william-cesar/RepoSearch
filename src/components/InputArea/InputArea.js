@@ -22,7 +22,7 @@ export default function Search({ passRepos }) {
 				setLoading(false)
 			})
 			.catch((err) => {
-				alert('Invalid Github username')
+				alert(err)
 				setLoading(false)
 			})
 	}

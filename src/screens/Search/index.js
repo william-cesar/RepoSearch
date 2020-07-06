@@ -11,7 +11,7 @@ export default function Search() {
 	const [repositories, setRepositories] = useState('')
 	const [username, setUsername] = useState('')
 	const [currentPage, setCurrentPage] = useState(1)
-	const [reposPerPage] = useState(5)
+	const [reposPerPage] = useState(3)
 
 	const updateRepos = (repoData, capFirstUsernameLetter) => {
 		//Receiving repos from 'Search' element
