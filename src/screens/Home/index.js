@@ -1,15 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styles.css'
 
 import LogoButton from '../../components/LogoButton/LogoButton'
 import SearchButton from '../../components/SearchButton/SearchButton'
 
-export default function Home() {
-	const [renderInput, setRenderInput] = useState(false)
+export default function Home({ shouldRenderSearchPage }) {
+	let renderInput = false
+
 	const renderInputField = (createInputField) => {
-		setRenderInput(createInputField)
+		renderInput = createInputField
+		const isTrue = () => {
+			shouldRenderSearchPage(renderInput)
+		}
+		isTrue()
 	}
-	console.log(renderInput)
+
 	return (
 		<div className='Home'>
 			<div className='head'>
