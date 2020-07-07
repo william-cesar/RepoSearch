@@ -1,3 +1,8 @@
+.Pagination {
+	display: flex;
+	justify-content: center;
+}
+
 .pagination-list {
 	display: flex;
 	justify-content: center;
@@ -5,16 +10,33 @@
 }
 
 .pages {
-	margin-right: 10px;
+	margin: 0 5px;
 }
 
-.page-number {
+.page-number,
+.first-page,
+.last-page {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	border: none;
 	background-color: #42cf47;
 	font-weight: 600;
+}
+
+.first-page,
+.last-page {
+	background-color: #2e2e2e;
+	border: 1px solid #42cf47;
+	color: #42cf47;
+}
+
+.first-page {
+	margin-right: 5px;
+}
+
+.last-page {
+	margin-left: 5px;
 }
 
 .page-number:focus {

@@ -27,21 +27,63 @@ export default function Pagination({
 			maxLeft = 1
 		}
 	}
+
 	for (let page = maxLeft; page <= maxRight; page++) {
 		pageNumbers.push(page)
 	}
 
-	return (
-		<nav className='Pagination'>
-			<ul className='pagination-list'>
-				{pageNumbers.map((number) => (
-					<li key={number} className='pages'>
-						<button onClick={() => paginate(number)} className='page-number'>
-							{number}
-						</button>
-					</li>
-				))}
-			</ul>
-		</nav>
-	)
+	if (currentPage !== 1 && currentPage < totalPages) {
+		return (
+			<nav className='Pagination'>
+				<button className='first-page' onClick={() => paginate(1)}>
+					&#171;
+				</button>
+				<ul className='pagination-list'>
+					{pageNumbers.map((number) => (
+						<li key={number} className='pages'>
+							<button onClick={() => paginate(number)} className='page-number'>
+								{number}
+							</button>
+						</li>
+					))}
+				</ul>
+				<button className='last-page' onClick={() => paginate(totalPages)}>
+					&#187;
+				</button>
+			</nav>
+		)
+	}
+
+	if (currentPage === totalPages) {
+		return (
+			<nav className='Pagination'>
+				<button className='first-page' onClick={() => paginate(1)}>
+					&#171;
+				</button>
+				<ul className='pagination-list'>
+					{pageNumbers.map((number) => (
+						<li key={number} className='pages'>
+							<button onClick={() => paginate(number)} className='page-number'>
+								{number}
+							</button>
+						</li>
+					))}
+				</ul>
+			</nav>
+		)
+	} else {
+		return (
+			<nav className='Pagination'>
+				<ul className='pagination-list'>
+					{pageNumbers.map((number) => (
+						<li key={number} className='pages'>
+							<button onClick={() => paginate(number)} className='page-number'>
+								{number}
+							</button>
+						</li>
+					))}
+				</ul>
+			</nav>
+		)
+	}
 }
