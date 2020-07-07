@@ -1,4 +1,5 @@
 import React from 'react'
+import './LabelArea.css'
 
 export default function LabelArea(props) {
 	const labelText = props.labelText

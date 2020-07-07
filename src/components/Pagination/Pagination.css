@@ -1,0 +1,23 @@
+.pagination-list {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.pages {
+	margin-right: 10px;
+}
+
+.page-number {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: none;
+	background-color: #42cf47;
+	font-weight: 600;
+}
+
+.page-number:focus {
+	background-color: #e5e5e5;
+	color: #42cf47;
+}

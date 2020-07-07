@@ -37,6 +37,7 @@ export default function Search() {
 				reposPerPage={reposPerPage}
 				totalRepos={repositories.length}
 				paginate={paginate}
+				currentPage={currentPage}
 			/>
 		</div>
 	)
