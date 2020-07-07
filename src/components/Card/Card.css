@@ -4,6 +4,7 @@
 	align-items: center;
 	margin: 20px auto;
 }
+
 .card-unit {
 	width: 300px;
 	height: 150px;
@@ -21,11 +22,18 @@
 	width: 100%;
 	text-align: center;
 }
+
 .card-unit .top .repo-name {
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: 500;
+}
+
+.Card img {
+	width: 16px;
+	height: 16px;
 }
 
 .card-unit .bottom {
@@ -46,10 +54,14 @@
 .card-unit .info {
 	align-items: flex-end;
 	color: #42cf47;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .card-unit .info-box {
 	width: 33%;
 	text-align: center;
+}
+
+.card-unit .labels {
+	font-size: 12px;
 }

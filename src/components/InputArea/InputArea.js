@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
-export default function Search({ passRepos }) {
+import './InputArea.css'
+
+export default function InputArea({ passRepos }) {
 	const [inputValue, setInputValue] = useState('')
 	const [loading, setLoading] = useState(false)
 
@@ -27,8 +29,14 @@ export default function Search({ passRepos }) {
 			})
 	}
 
+	const handleKeyDown = (event) => {
+		if (event.key === 'Enter') {
+			submit()
+		}
+	}
+
 	return (
-		<div className='Search'>
+		<div className='InputArea' onKeyDown={handleKeyDown}>
 			<input
 				type='text'
 				className='input-area'

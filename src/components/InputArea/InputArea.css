@@ -1,0 +1,25 @@
+.InputArea {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.InputArea .input-area {
+	width: 200px;
+	height: 40px;
+	border: 1px solid #42cf47;
+	border-radius: 10px 0 0 10px;
+	font-size: 15px;
+}
+
+.InputArea .input-area::placeholder {
+	text-align: center;
+}
+
+.InputArea .submit-button {
+	width: 150px;
+	border: none;
+	background-color: #42cf47;
+	border-radius: 0 10px 10px 0;
+	font-size: 15px;
+}
