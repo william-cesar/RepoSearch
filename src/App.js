@@ -9,14 +9,16 @@ export default function App() {
 	const renderSearch = (isTrue) => {
 		setRenderSearchPage(isTrue)
 	}
+	const renderHome = (isTrue) => {
+		setRenderSearchPage(isTrue)
+	}
 
-	//is rendering search page first -- don't forget to change before commit
 	return (
 		<div className='App'>
 			{renderSearchPage ? (
-				<Home shouldRenderSearchPage={renderSearch} />
+				<Search shouldRenderHomePage={renderHome} />
 			) : (
-				<Search />
+				<Home shouldRenderSearchPage={renderSearch} />
 			)}
 		</div>
 	)

@@ -7,7 +7,7 @@ import Card from '../../components/Card/Card'
 import LabelArea from '../../components/LabelArea/LabelArea'
 import Pagination from '../../components/Pagination/Pagination'
 
-export default function Search() {
+export default function Search({ shouldRenderHomePage }) {
 	const [repositories, setRepositories] = useState('')
 	const [username, setUsername] = useState('')
 	const [currentPage, setCurrentPage] = useState(1)
@@ -27,9 +27,13 @@ export default function Search() {
 	//Receiving page number from 'Paginate'
 	const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
+	const returnHome = (stayOnSearchPage) => {
+		shouldRenderHomePage(!stayOnSearchPage)
+	}
+
 	return (
 		<div className='Search'>
-			<Header />
+			<Header returnHome={returnHome} />
 			<InputArea passRepos={updateRepos} />
 			<LabelArea labelText={username} />
 			<Card cardData={currentRepo} />

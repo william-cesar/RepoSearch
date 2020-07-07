@@ -3,9 +3,9 @@ import './Header.css'
 
 import LogoButton from '../../components/LogoButton/LogoButton'
 
-export default function Header() {
+export default function Header({ returnHome }) {
 	return (
-		<header className='Header'>
+		<header className='Header' onClick={() => returnHome(true)}>
 			<LogoButton />
 			<h1>RepoSearch</h1>
 		</header>
