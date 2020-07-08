@@ -24,7 +24,12 @@ export default function Card({ cardData }) {
 												<p className='repo-date'>{date}</p>
 											</div>
 											<div className='info-box'>
-												<a className='link-url' href={html_url}>
+												<a
+													className='link-url'
+													href={html_url}
+													target='_blank'
+													rel='noopener noreferrer'
+												>
 													<img
 														src={process.env.PUBLIC_URL + '/github.png'}
 														alt='github cat'

@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function LogoButton() {
+export default function Logo() {
 	return (
-		<div className='LogoButton'>
+		<div className='Logo'>
 			<img
-				className='logo'
+				className='logo-image'
 				src={process.env.PUBLIC_URL + '/reposearch.png'}
 				alt='Github cat with magnifier'
 			/>

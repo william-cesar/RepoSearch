@@ -5,17 +5,18 @@ import Home from './screens/Home'
 import Search from './screens/Search'
 
 export default function App() {
-	const [renderSearchPage, setRenderSearchPage] = useState(false)
-	const renderSearch = (isTrue) => {
-		setRenderSearchPage(isTrue)
+	const [renderPage, setRenderPage] = useState(false)
+
+	const renderSearch = (renderSearch) => {
+		setRenderPage(renderSearch)
 	}
-	const renderHome = (isTrue) => {
-		setRenderSearchPage(isTrue)
+	const renderHome = (renderHome) => {
+		setRenderPage(renderHome)
 	}
 
 	return (
 		<div className='App'>
-			{renderSearchPage ? (
+			{renderPage ? (
 				<Search shouldRenderHomePage={renderHome} />
 			) : (
 				<Home shouldRenderSearchPage={renderSearch} />

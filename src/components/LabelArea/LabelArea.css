@@ -4,3 +4,32 @@
 	color: #42cf47;
 	font-weight: 600;
 }
+
+/*media queries*/
+
+@media (min-width: 700px) {
+	.Label {
+		margin-top: 40px;
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 900px) {
+	.Label {
+		font-size: 32px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.Label {
+		margin-top: 60px;
+		font-size: 40px;
+	}
+}
+
+@media (min-width: 2000px) {
+	.Label {
+		margin-top: 80px;
+		font-size: 60px;
+	}
+}

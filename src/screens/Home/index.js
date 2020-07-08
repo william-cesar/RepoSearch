@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-import LogoButton from '../../components/LogoButton/LogoButton'
+import Logo from '../../components/Logo/Logo'
 import SearchButton from '../../components/SearchButton/SearchButton'
 
 export default function Home({ shouldRenderSearchPage }) {
@@ -18,7 +18,7 @@ export default function Home({ shouldRenderSearchPage }) {
 	return (
 		<div className='Home'>
 			<div className='head'>
-				<LogoButton />
+				<Logo />
 			</div>
 			<section>
 				<h1 className='title'>RepoSearch</h1>

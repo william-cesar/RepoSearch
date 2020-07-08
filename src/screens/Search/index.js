@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './styles.css'
 
 import Header from '../../components/Header/Header'
 import InputArea from '../../components/InputArea/InputArea'
@@ -11,7 +10,7 @@ export default function Search({ shouldRenderHomePage }) {
 	const [repositories, setRepositories] = useState('')
 	const [username, setUsername] = useState('')
 	const [currentPage, setCurrentPage] = useState(1)
-	const [reposPerPage] = useState(3)
+	const [reposPerPage] = useState(9)
 
 	const updateRepos = (repoData, capFirstUsernameLetter) => {
 		//Receiving repos from 'Search' element
@@ -27,6 +26,7 @@ export default function Search({ shouldRenderHomePage }) {
 	//Receiving page number from 'Paginate'
 	const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
+	//Return to home page
 	const returnHome = (stayOnSearchPage) => {
 		shouldRenderHomePage(!stayOnSearchPage)
 	}

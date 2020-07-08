@@ -10,6 +10,7 @@
 	border: 1px solid #42cf47;
 	border-radius: 10px 0 0 10px;
 	font-size: 15px;
+	text-align: center;
 }
 
 .InputArea .input-area::placeholder {
@@ -22,4 +23,93 @@
 	background-color: #42cf47;
 	border-radius: 0 10px 10px 0;
 	font-size: 15px;
+}
+
+/*media queries*/
+@media (orientation: landscape) and (max-height: 400px) {
+	.InputArea .input-area {
+		width: 150px;
+		height: 30px;
+		font-size: 14px;
+	}
+
+	.InputArea .submit-button {
+		width: 140px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 350px) {
+	.InputArea {
+		width: 100vw;
+	}
+
+	.InputArea .input-area {
+		width: 140px;
+		height: 25px;
+		font-size: 14px;
+	}
+
+	.InputArea .submit-button {
+		width: 140px;
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 360px) {
+	.InputArea .input-area {
+		width: 180px;
+		height: 30px;
+	}
+}
+
+@media (min-width: 700px) {
+	.InputArea .input-area {
+		width: 250px;
+		height: 40px;
+		font-size: 18px;
+	}
+
+	.InputArea .submit-button {
+		width: 180px;
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 900px) {
+	.InputArea .input-area {
+		width: 300px;
+		font-size: 20px;
+	}
+
+	.InputArea .submit-button {
+		width: 200px;
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.InputArea .input-area {
+		width: 350px;
+		height: 45px;
+		font-size: 22px;
+	}
+
+	.InputArea .submit-button {
+		width: 250px;
+		font-size: 22px;
+	}
+}
+
+@media (min-width: 2000px) {
+	.InputArea .input-area {
+		width: 700px;
+		height: 100px;
+		font-size: 36px;
+	}
+
+	.InputArea .submit-button {
+		width: 450px;
+		font-size: 36px;
+	}
 }
