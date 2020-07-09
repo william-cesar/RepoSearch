@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/RepoSearch/static/css/main.19a2e726.chunk.css",
+    "main.js": "/RepoSearch/static/js/main.381f9119.chunk.js",
+    "main.js.map": "/RepoSearch/static/js/main.381f9119.chunk.js.map",
+    "runtime-main.js": "/RepoSearch/static/js/runtime-main.49ac6105.js",
+    "runtime-main.js.map": "/RepoSearch/static/js/runtime-main.49ac6105.js.map",
+    "static/js/2.42bcb4bb.chunk.js": "/RepoSearch/static/js/2.42bcb4bb.chunk.js",
+    "static/js/2.42bcb4bb.chunk.js.map": "/RepoSearch/static/js/2.42bcb4bb.chunk.js.map",
+    "index.html": "/RepoSearch/index.html",
+    "precache-manifest.7c3a2c7847ee1ce8f6abdb8d1146dc50.js": "/RepoSearch/precache-manifest.7c3a2c7847ee1ce8f6abdb8d1146dc50.js",
+    "service-worker.js": "/RepoSearch/service-worker.js",
+    "static/css/main.19a2e726.chunk.css.map": "/RepoSearch/static/css/main.19a2e726.chunk.css.map",
+    "static/js/2.42bcb4bb.chunk.js.LICENSE.txt": "/RepoSearch/static/js/2.42bcb4bb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49ac6105.js",
+    "static/js/2.42bcb4bb.chunk.js",
+    "static/css/main.19a2e726.chunk.css",
+    "static/js/main.381f9119.chunk.js"
+  ]
+}
