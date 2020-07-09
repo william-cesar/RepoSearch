@@ -112,19 +112,19 @@
 	}
 
 	.card-unit .top .repo-name {
-		font-size: 18px;
+		font-size: 15px;
 	}
 
 	.Card img {
-		width: 14px;
-		height: 14px;
+		width: 13px;
+		height: 13px;
 	}
 
 	.card-unit .info {
-		font-size: 16px;
+		font-size: 13px;
 	}
 	.card-unit .labels {
-		font-size: 14px;
+		font-size: 11px;
 	}
 }
 
@@ -139,19 +139,19 @@
 	}
 
 	.card-unit .top .repo-name {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.Card img {
-		width: 18px;
-		height: 18px;
+		width: 14px;
+		height: 14px;
 	}
 
 	.card-unit .info {
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.card-unit .labels {
-		font-size: 16px;
+		font-size: 12px;
 	}
 }
 
@@ -166,19 +166,19 @@
 	}
 
 	.card-unit .top .repo-name {
-		font-size: 28px;
+		font-size: 24px;
 	}
 
 	.Card img {
-		width: 24px;
-		height: 24px;
+		width: 20px;
+		height: 20px;
 	}
 
 	.card-unit .info {
-		font-size: 26px;
+		font-size: 22px;
 	}
 	.card-unit .labels {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 
@@ -193,18 +193,18 @@
 	}
 
 	.card-unit .top .repo-name {
-		font-size: 50px;
+		font-size: 48px;
 	}
 
 	.Card img {
-		width: 38px;
-		height: 38px;
+		width: 34px;
+		height: 34px;
 	}
 
 	.card-unit .info {
-		font-size: 38px;
+		font-size: 34px;
 	}
 	.card-unit .labels {
-		font-size: 32px;
+		font-size: 28px;
 	}
 }
